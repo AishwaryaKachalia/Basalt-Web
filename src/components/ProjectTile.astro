@@ -1,0 +1,11 @@
+---
+import type { Tile } from '../data/projects';
+const { title, category, tone, ratio } = Astro.props as Tile;
+---
+<a class="tile" href="#" style={`--ratio:${ratio};--tone:${tone}`}>
+  <div class="image" role="img" aria-label={title}></div>
+  <div class="caption">
+    <span class="title">{title}</span>
+    <span class="category">{category}</span>
+  </div>
+</a>
