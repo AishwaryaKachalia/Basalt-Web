@@ -51,7 +51,7 @@ a:hover { text-decoration: underline; text-underline-offset: 4px; }
 .wordmark {
   font-family: var(--display);
   font-weight: 700;
-  font-size: 44px;
+  font-size: 30px;
   letter-spacing: 0.08em;
   line-height: 1;
 }
@@ -95,7 +95,7 @@ a:hover { text-decoration: underline; text-underline-offset: 4px; }
 @media (max-width: 760px) {
   :root { --gutter: 20px; }
   .site-header { padding-bottom: 48px; gap: 16px; }
-  .wordmark { font-size: 24px; }
+  .wordmark { font-size: 20px; }
   .site-header nav { gap: 12px; font-size: 11px; padding-top: 6px; }
   .grid { gap: 56px; }
   .row { flex-direction: column; gap: 56px; }
