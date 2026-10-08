@@ -1,0 +1,37 @@
+---
+import Base from '../layouts/Base.astro';
+import Header from '../components/Header.astro';
+
+const socials = [
+  { label: 'Instagram', href: '#' },
+  { label: 'Behance', href: '#' },
+  { label: 'LinkedIn', href: '#' },
+];
+---
+<Base title="Contact — Bassalt" description="Start a project with Bassalt.">
+  <Header />
+  <main class="page contact">
+    <h1 class="lede">Have a project in mind?</h1>
+    <a class="big-mail" href="mailto:hello@bassalt.studio">hello@bassalt.studio</a>
+
+    <div class="cols">
+      <section>
+        <h2 class="label">New business</h2>
+        <p>hello@bassalt.studio</p>
+      </section>
+      <section>
+        <h2 class="label">Follow</h2>
+        <ul class="list">
+          {socials.map((s) => <li><a href={s.href}>{s.label}</a></li>)}
+        </ul>
+      </section>
+      <section>
+        <h2 class="label">Studio</h2>
+        <p>Placeholder: city and country.</p>
+      </section>
+    </div>
+  </main>
+  <footer class="site-footer slim">
+    <div class="footer-bar"><span>© 2026 Bassalt</span></div>
+  </footer>
+</Base>

@@ -1,0 +1,31 @@
+---
+import Base from '../layouts/Base.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+
+const services = ['Brand identity', 'Packaging design', 'Motion & title design', 'Art direction'];
+---
+<Base title="About — Bassalt" description="Bassalt is a creative agency building brands on solid ground.">
+  <Header />
+  <main class="page">
+    <h1 class="lede">Bassalt is a creative agency. We build brands on solid ground: identity, packaging and motion with a sense of weight.</h1>
+
+    <div class="cols">
+      <section>
+        <h2 class="label">What we do</h2>
+        <ul class="list">
+          {services.map((s) => <li>{s}</li>)}
+        </ul>
+      </section>
+      <section>
+        <h2 class="label">Approach</h2>
+        <p>Placeholder: a short paragraph on how Bassalt works, who it works with and what makes the studio different.</p>
+      </section>
+      <section>
+        <h2 class="label">Studio</h2>
+        <p>Placeholder: founder name, location and a line about the team.</p>
+      </section>
+    </div>
+  </main>
+  <Footer />
+</Base>
